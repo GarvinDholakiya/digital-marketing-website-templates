@@ -1,0 +1,184 @@
+.banner-image {
+  background-image: url('Vesperr/assets/img/wave\ \(1\).png');
+  background-size: cover;
+}
+
+  #hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: black;
+  }
+  
+  #hero h2 {
+    color: #484848;
+    margin-bottom: 50px;
+    font-size: 24px;
+  }
+  
+  #hero .btn-get-started {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #3498db;
+    border: 2px solid #3498db;
+  }
+  
+  #hero .btn-get-started:hover {
+    background: #3498db;
+    color: #fff;
+  }
+  
+  #hero .animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  }
+
+
+
+  /*--------------------------------------------------------------
+# Clients
+--------------------------------------------------------------*/
+.clients {
+    background: #f3f9fd;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .clients .col-lg-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .clients img {
+    width: 50%;
+    filter: grayscale(100);
+    transition: all 0.4s ease-in-out;
+    display: inline-block;
+    padding: 10px 0;
+  }
+  
+  .clients img:hover {
+    filter: none;
+    transform: scale(1.1);
+  }
+
+
+ @media (max-width: 991) {
+  #navbarnav{
+    display: block;
+  }
+ #bimg{
+    background-image: none;
+  }
+  
+ }
+ .mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background:#1b4cee;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #1b4cee;
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+  .topnav{
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  #hero {
+    height: 100vh;
+  }
+
+  #hero .animated {
+    -webkit-animation: none;
+    animation: none;
+  }
+
+  #hero .hero-img,
+  #counts .counts-img {
+    text-align: center;
+  }
+
+  #hero .hero-img img,
+  #counts .counts-img img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero {
+    margin-top: 20px;
+  }
+
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #hero p{
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  #hero .hero-img img,
+  #counts .counts-img img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 575px) {
+  #hero .hero-img img,
+  #counts .counts-img img {
+    width: 80%;
+  }
+}
